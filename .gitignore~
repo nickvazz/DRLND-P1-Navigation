@@ -1,0 +1,13 @@
+Week2/Banana_Linux.zip
+Week2/Banana_Linux/
+*/model-*
+*.zip
+__pycache__
+unity-enviroment.log
+.ipynb_checkpoints
+.DS_Store
+*.ipynb_checkpoints
+*unity-enviroment.log
+*unity-environment.log
+Section3/unity-environment.logz
+*nohup.out

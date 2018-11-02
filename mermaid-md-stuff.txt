@@ -1,0 +1,59 @@
+```mermaid
+graph LR
+e[Environment] -->|State| A[Agent]
+e[Environment] -->|Reward| A[Agent]
+A[Agent] --> |Action| e[Environment]
+```
+
+
+
+```mermaid
+graph TD
+subgraph 
+
+subgraph Deep Q-Learning 
+s[Sampling] --> l[Learning]
+l[Learning] --> |repeat| s[Sampling]
+end
+
+subgraph Sampling
+a[1 - choose action from policy using epsilon greedy choices] --> b[2 - use action and get reward]
+b[2 - use action and get reward] --> c[3 - store experience in replay memory]
+c[3 - store experience in replay memory] --> |repeat| a[1 - choose action from policy using epsilon greedy choices]
+end
+subgraph Learning
+d[get minibatch from replay memory] --> e[set target network]
+e[set target network] --> f[update target network]
+f[update target network] --> |repeat| d[get minibatch from replay memory]
+end
+end
+```
+
+
+
+```mermaid
+graph LR
+b[relu]-->c[num_units]
+d[relu]-->e[num_units]
+f[relu]-->g[num_units]
+
+subgraph Layer4
+g[num_units] --> h[relu]
+h[num_units] --> j[output]
+end
+
+subgraph Layer3
+e[num_units] --> f[relu]
+end
+
+subgraph Layer2
+c[num_units] --> d[relu]
+end
+
+subgraph Layer1
+in[input] --> a[num_units]
+a[num_units] --> b[relu]
+end
+
+```
+
