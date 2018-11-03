@@ -76,6 +76,10 @@ The results for all-models and the seed-models are shown (sorted by win_iter) in
 
 The best models can be found [here](https://github.com/nickvazz/Udacity-DRL/tree/master/Section2/best-models).
 
+# Future Work!
+
+After the initial hype around the vanilla DQN, there have been many other networks and training strategies that could solve the model either faster or be more robust. Some of these might include using the Dueling DQN or a Double DQN to start as they are not too much extra work. The next step may be to change the way the experience is sampled and use Prioritized Experiences instead. After that, it may be worth trying to use Rainbow which includes a lot of small changing to the model that in aggregate allow for a great Agent to be trained.
+
 # Appendix - A (All-Model Results)
 | model     | GAMMA | UPDATE_EVERY | num_units | win_iter |
 |-----------|-------|--------------|-----------|----------|
