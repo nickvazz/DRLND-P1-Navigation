@@ -1,6 +1,5 @@
 Banana_Linux.zip
 Banana_Linux/
-*/model-*
 *.zip
 __pycache__
 unity-enviroment.log
